@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #ada996;
+
+  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+}
+h1 {
+  margin: 10px 126px;
+}
+.app_inputs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px auto;
+}
+.app {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
+.app_right {
+  margin-top: 25px;
+  background: #ffefba;
+  background: linear-gradient(to right, #ffffff, #ffefba);
+
+  margin-right: 15px;
+  padding: 10px;
+}
+
+.app_btn {
+  display: flex;
+  margin: auto 126px;
+}
+button {
+  padding: 7px 45px;
+  font-size: large;
+  background-color: #7bb3fd;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #4a90eb;
+}
+button:active {
+  color: white;
+  transform: scale(1.05);
+}
+/* for small resolution devices */
+@media (max-width: 990px) {
+  .app_left {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .app_inputs {
+    flex-direction: column;
+  }
+  .app_picks {
+    margin: 10px auto !important;
+  }
+  .app {
+    flex-direction: column;
+    align-items: center;
+  }
+}
